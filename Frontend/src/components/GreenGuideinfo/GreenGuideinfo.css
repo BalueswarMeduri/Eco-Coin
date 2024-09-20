@@ -1,0 +1,159 @@
+.bigcontainer {
+    padding-bottom: 35rem;
+    overflow: hidden;
+}
+
+.GreenGuide {
+    position: absolute;
+    top: 27rem;
+    left: 18rem;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 60%;
+    border-radius: 20px;
+    border: 3px solid var(--green);
+    overflow: hidden;
+    font-size: 1.5rem;
+    text-align: center;
+    color: black !important;
+}
+
+.toast-error {
+    background-color: #9c0e03 !important;
+    color: white !important;
+}
+
+.conversation {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: var(--white);
+}
+
+.message {
+    margin-bottom: 20px;
+}
+
+.message p {
+    margin: 5px 0;
+    color: var(--black);
+}
+
+.input-container {
+    display: flex;
+    padding: 10px;
+    background-color: var(--white);
+    border-top: 1px solid #ccc;
+    color: black;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid var(--green);
+    border-radius: 5px;
+    margin-right: 10px;
+    color: black;
+}
+
+input[type="text"]:focus {
+    border-color: var(--green);
+    /* Ensures border stays green on focus */
+    outline: none;
+    /* Removes the default outline */
+    box-shadow: 0 0 2px var(--green);
+    /* Adds a green glow effect */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: var(--green);
+    color: var(--white);
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    transition: 0.3s;
+    background-color: green;
+}
+
+.message .you {
+    text-align: right;
+}
+
+.message .ai {
+    text-align: left;
+}
+
+.youhead {
+    color: var(--green);
+}
+
+.aihead {
+    color: var(--green);
+}
+
+.example {
+    height: 10rem;
+    width: 70%;
+    margin: auto;
+    padding-top: 7rem;
+    padding-left: 2rem;
+    text-align: center;
+}
+
+.exhead {
+    font-weight: 700;
+    color: var(--green);
+}
+
+.exquestion {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.exque {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.que1 {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--green);
+    cursor: pointer;
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .GreenGuide{
+        height: 50vh;
+        width: 95%;
+        position: absolute;
+        top: 52rem;
+        left: 0.8rem;
+    }
+    .example{
+        width: 90%;
+        padding-left: 1rem;
+    }
+    .exquestion {
+        display: block;
+        margin-top: 1rem;
+    }
+    .bigcontainer {
+        padding-bottom: 65rem;
+        overflow: hidden;
+    }
+    .que1{
+        margin-bottom: 1rem !important;
+    }
+    .exque{
+        display: block;
+    }
+}

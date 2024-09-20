@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.bigforfullhero {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: 
+        linear-gradient(
+            to right, 
+            rgba(0, 0, 0, 0.5) 0%, /* Black on the left side */
+            rgba(0, 0, 0, 0.2) 40%, /* Lighter opacity towards the middle */
+            rgba(0, 0, 0, 0) 70% /* Clear on the right side */
+        ),
+        linear-gradient(
+            to top right, 
+            rgba(0, 0, 0, 0.6), /* Black overlay on the top-right */
+            rgba(0, 0, 0, 0.1) 70% /* Clear at the center */
+        ),
+        url(http://www.justicewatchfoundation.org/image/Tree-Plantation.jpg); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.heading{
+    color: white;
+    font-size: 4.8rem ;
+    font-weight: 800;
+    font-family: 'Inter' !important;
+    letter-spacing: 6px;
+}
+.herofull{
+    width: 85%;
+    margin: auto;
+}
+.game{
+    font-size: 3.3rem;
+    color: white;
+}
+.btn{
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    color: white;
+}
+.leftside{
+    width: 60%;
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .bigforfullhero{
+        background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://media.istockphoto.com/id/1018703724/photo/plant-tree-in-neutral-background-close-up-of-fresh-green-plant.jpg?s=612x612&w=0&k=20&c=Pfgp-cgbu71Wa2oxLcD6CcPYNtiFkfaLzkDESBrTEPk=); 
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .heading{
+        text-align: center;
+    }
+    .game{
+        text-align: center;
+        font-size: 3rem;
+    }
+    .btn{
+        margin-top: 1rem;
+    }
+    .leftside{
+        width: 100%;
+    }
+    .herofull{
+        text-align: center;
+    }
+}

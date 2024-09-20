@@ -1,0 +1,125 @@
+.footerbox{
+    margin-top: 15rem;
+    overflow: hidden;
+    background-color: rgb(33, 31, 31);
+
+}
+.headingg{
+    text-align: center;
+    padding: 30px 0;
+    word-spacing: 0.5rem;
+    color: white;
+}
+.links-social{
+    font-size: 1.6rem;
+    display: flex;
+    width: 20%;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+.linkanch{
+    text-decoration: none;
+    color: white;
+}
+.line{
+    margin: 30px 70px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+}
+.box a{
+    padding: 0.7rem 0;
+}
+.containerfooter{
+    margin: 0 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.box a{
+    color: white;
+}
+.email-ipt{
+    background-color: transparent;
+    height: 60px;
+    width: 75%;
+    border: 2px solid white;
+    border-radius: 5px 0px 0px 5px;
+    padding-left: 10px;
+}
+.footerForm input::placeholder{
+    color: white;
+    font-size: 1rem;
+
+}
+.footerForm{
+    padding-top: 20px;
+}
+.submit-btn{
+    background-color: white;
+    color: var(--black);
+    height: 60px;
+    width: 20%;
+    border: 2px solid white;
+    border-radius: 0 5px 5px 0;
+    font-weight: 500;
+}
+.box4{
+    width :40%;
+}
+.container a:hover{
+    color: var(--green);
+}
+.submit-btn:hover{
+    box-shadow: 0 0 7px white;
+}
+.email-ipt:focus{
+    box-shadow: 0 0 7px white;
+    outline: none;
+}
+.link2{
+    text-decoration: none;
+}
+.links2{
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+    margin: 20px auto;
+
+}
+.links2 a , .links2 span {
+    color: white;
+}
+.links2 a:hover{
+    color: white;
+}
+.lastline{
+    margin-top: 20px;
+    height: 40px;
+    background-color: var(--black);
+    text-align: center;
+}
+.lastline p{
+    padding: 10px;
+    color: white;
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .containerfooter{
+        flex-direction: column;
+    }
+    .email-ipt{
+        height: 50px;
+        width: 250%;
+        border-radius: 5px;
+    }
+    .email-ipt::placeholder{
+        font-size: 0.7rem !important;
+    }
+    .submit-btn{
+        margin-top: 5px;
+        width: 130%;
+        height: 50px;
+        border-radius: 5px;
+    }
+
+}

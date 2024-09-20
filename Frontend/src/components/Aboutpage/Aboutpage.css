@@ -1,0 +1,291 @@
+
+.about-main{
+    height: 80vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.6)),url(https://assets.weforum.org/article/image/qGgfxhM2PU3tyvAFoc-5FDTxmVY5sDcL8JSIo5Kj4aI.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    color:var(--white);
+    font-size: 1.5rem;
+
+}
+.about-main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-main-content h1,.about-main-content h2{
+    font-size: 2em;
+    font-weight: 900;
+}
+.about-main-content-button{
+    background-color: var(--red);
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 8px 20px;
+
+}
+.about-main-content-button:hover{
+    scale: 1.05;
+    transition: scale 0.5s;
+    box-shadow: 1px 1px 8px 1px var(--grey) ;
+}
+
+.about-vision{
+    height: 30vh;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10rem;
+
+}
+.about-vision-content{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+}
+.about-vision-content h1{
+    font-weight: 700;
+    font-size: 2.2rem;
+    padding-bottom: 8px;
+}
+.about-vision-content p{
+    font-size: 1.2rem;
+}
+.about-count{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: var(--black);
+    color: var(--black);
+}
+.text-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.text-content h1{
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.text-content p{
+    font-size: 1.2rem;
+}
+.count-content-container{
+    height: 40vh;
+    background-color: var(--black);
+    color: var(--black);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.count-card{
+    height: 60%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.count-card h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.count-icon{
+    font-size: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+}
+#count-icon1{    
+    color: brown;
+    border: 4px solid brown;
+}
+#count-icon1:hover{
+    color:var(--black);
+    background-color: brown;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 10px 2px brown ;
+}
+#count-icon2{    
+    color: var(--blue);
+    border: 4px solid var(--blue);
+    transition: all 0.3s;
+    
+}
+#count-icon2:hover{
+    color:var(--white);
+    background-color: var(--blue);
+    box-shadow: 1px 1px 10px 2px var(--blue) ;
+}
+#count-icon3{    
+    color: var(--green);
+    border: 4px solid var(--green);
+}
+#count-icon3:hover{
+    color:var(--white);
+    background-color: var(--green);
+    transition: all 0.3s;
+    box-shadow: 1px 1px 10px 2px var(--green) ;
+}
+.contact-form{
+    height: 70vh;
+    background-color: var(--black);
+    border-top: 1px solid green;
+}
+.contact-form h1{
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.form-containerrr{
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+}
+.input-container1{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    height: 2rem;
+    gap: 10px;
+}
+.input-container1 input{
+    width: 45%;
+    height: 2.5em;
+    border: 1px solid green;
+    outline: none;
+    border-radius: 5px;
+}
+.input-container2{
+    width: 60%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.input-container2 input{
+    width: 100%;
+    height: 6rem;
+    border: 1px solid green;
+    outline: none;
+    border-radius: 5px;
+}
+.input-container2 textarea{
+    width: 100%;
+    height: 30rem;
+    border: 1px solid green;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+}
+.input-container2 button{
+    border-radius: 8px;
+    font-weight: 600;
+    height: 7rem;
+    width: 6rem;
+    color: var(--white);
+    background-color: var(--green);
+}
+.input-container2 button:hover{
+    transition: all 0.3s;
+    box-shadow: 1px 1px 10px 2px green ;
+}
+.form-container input,.form-container textarea{
+    padding-left:8px ;
+}
+.form-container input:focus,.form-container textarea:focus{
+    box-shadow: 0px 0px 2px 1px var(--green) ;
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .about-main-content h1,
+    .about-main-content h2 {
+        font-size: 1.8rem;
+    }
+    .about-main-content p{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .about-main-content-button {
+        font-size: 1.1rem;
+        padding: 6px 16px;
+    }
+    .about-vision-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-vision-content p {
+        text-align: center;
+        font-size: 0.7rem !important;
+    }
+    .about-vision-content h1{
+        text-align: center;
+        font-weight: 700;
+        font-size: 2.2rem;
+        padding-bottom: 8px;
+        color: var(--green);
+    }
+    .about-vision-content{
+        width: 100% !important;
+    }
+    .about-vision-content p{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .about-vision{
+        width: 100% !important;
+        height: 20vh !important;
+    }
+    .about-count{
+        margin-top: 7rem;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        background-color: var(--black);
+        color: var(--black);
+        text-align: center;
+    }
+    .input-container1{
+        width: 100%;
+    }
+    .input-container1 input{
+        width: 60%;
+    }
+    .input-container2{
+        width: 100%;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .input-container2 input{
+        width: 100%;
+        height: 6rem;
+        border: 1px solid green;
+        outline: none;
+        border-radius: 5px;
+    }
+}

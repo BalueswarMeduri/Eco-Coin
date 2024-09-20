@@ -1,0 +1,233 @@
+/* Default styles (for larger screens) */
+.profile {
+    padding-top: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heding {
+    padding-top: 7rem;
+    color: var(--green);
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.profile-info {
+    padding-top: 2rem;
+    width: 35%;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 5px;
+    border: 5px solid var(--green);
+}
+
+.men, .girl {
+    font-size: 6rem !important;
+}
+
+.ditel {
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+
+.points {
+    margin-top: 2rem;
+    margin-right: 150px;
+}
+
+.points h1 {
+    color: var(--green);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.points p {
+    padding: 5px 0;
+    font-size: 2rem;
+}
+
+.chart-container h2 {
+    text-align: center;
+    padding: 3rem 0;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--green);
+}
+
+.chart-container {
+    margin-top: 4rem;
+}
+
+.achive {
+    margin-top: 7rem;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.achheading {
+    margin-top: 7rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--green);
+    font-weight: 600;
+}
+
+.f50 img {
+    opacity: 0.2;
+    border-radius: 50%;
+    margin: 1rem 0;
+    border: 5px solid var(--green);
+}
+
+.f50 {
+    width: 20%;
+    text-align: center;
+    margin-left: 5rem !important;
+    color: var(--green);
+    margin-right: 4rem;
+}
+
+.f50 p {
+    color: var(--green);
+}
+
+.leaderboard {
+    text-align: center;
+    margin: 5rem 0;
+}
+
+/* Media queries for responsiveness */
+
+/* For tablets and smaller devices */
+@media screen and (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 3rem 7rem;
+    }
+
+    .profile-info {
+        width: 100%;
+        margin: 0;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .ditel {
+        font-size: 1.2rem;
+    }
+
+    .points {
+        margin-top: 2rem;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .chart-container {
+        margin-top: 2rem;
+    }
+
+    .achive {
+        margin-right: 5rem;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    .f50 {
+        width: 80%;
+        margin: 1rem 0;
+    }
+
+    .heding {
+        font-size: 2rem;
+    }
+
+    .points h1 {
+        font-size: 2rem;
+    }
+
+    .points p {
+        font-size: 1.5rem;
+    }
+
+    .chart-container h2 {
+        font-size: 2rem;
+    }
+
+    .achheading {
+        font-size: 1.8rem;
+    }
+}
+
+/* For mobile phones and very small screens */
+@media screen and (max-width: 480px) {
+    .profile {
+        padding-top: 5rem;
+    }
+
+    .profile-info {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .ditel {
+        font-size: 1rem;
+    }
+
+    .points {
+        text-align: center;
+    }
+
+    .points h1 {
+        font-size: 1.8rem;
+    }
+
+    .points p {
+        font-size: 1.2rem;
+    }
+
+    .chart-container {
+        padding: 0 1rem;
+        margin-top: 2rem;
+    }
+
+    .achive {
+        margin-top: 3rem;
+        flex-direction: column;
+    }
+
+    .f50 {
+        width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .f50 img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .heding {
+        font-size: 1.8rem;
+    }
+
+    .achheading {
+        font-size: 1.5rem;
+    }
+
+    .chart-container h2 {
+        font-size: 1.8rem;
+    }
+}

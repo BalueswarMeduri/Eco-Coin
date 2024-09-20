@@ -1,0 +1,170 @@
+.hero2big {
+    overflow: hidden;
+    margin-bottom: 5rem;
+    padding: 1rem; /* Add padding for mobile responsiveness */
+}
+
+.hero-section {
+    height: 70vh;
+    margin: 2rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem; /* Add some space between the cards */
+    flex-wrap: wrap; /* Ensure cards wrap on smaller screens */
+}
+
+.hero-card {
+    height: 26rem;
+    width: 30%;
+    border: 2px solid var(--green);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out; /* Add hover scaling effect */
+}
+
+.hero-card:hover {
+    transform: scale(1.05); /* Scale card on hover for better interaction */
+}
+
+.hero-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out; /* Add transition for the image */
+}
+
+.hero-text {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--white);
+    outline: none;
+    line-height: 1.5rem;
+    padding: 100px 50px;
+    backdrop-filter: blur(0px); /* Initially, no blur */
+    transition: 0.5s ease-in-out; /* Add transition for the blur effect */
+}
+.hero-text h1 {
+    padding-top: 3rem;
+    text-align: center;
+    color: var(--green);
+}
+
+.hero-text p,
+.hero-text button {
+    margin-top: 1.3rem;
+    text-align: center;
+    align-items: center;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hero-text button {
+    margin-left: 5rem;
+}
+
+.hero-card:hover .hero-text {
+    backdrop-filter: blur(5px); /* Apply blur on hover */
+}
+
+.hero-card:hover .hero-text p,
+.hero-card:hover .hero-text button {
+    display: block;
+    opacity: 1;
+}
+
+.hero-button {
+    color: white;
+    background-color: var(--green);
+    outline: none;
+    border: none;
+    height: 2.5rem;
+    width: 10rem;
+    margin-left: 20%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.hero-section h1 {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.hero2big h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--green);
+    font-weight: 700;
+    padding: 1rem 0;
+}
+
+.herpara {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 0 2rem; /* Ensure paragraph has some spacing on mobile */
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .hero-section{
+        display: block;
+    }
+}
+@media (max-width: 1024px) {
+    .hero-section {
+        flex-direction: column; /* Stack the cards vertically */
+    }
+
+    .hero-card {
+        width: 90%; /* Make the card take full width on medium screens */
+        margin-bottom: 2rem; /* Add space between the stacked cards */
+    }
+    .hero-section {
+        display: block;
+        margin: 0; /* Remove margin on small screens */
+    }
+
+    .hero-card {
+        width: 100%; /* Full width cards on mobile */
+        height: 20rem; /* Adjust height for smaller devices */
+    }
+
+    .hero-text {
+        padding: 50px 20px; /* Reduce padding */
+    }
+
+    .hero-text h1 {
+        font-size: 1.2rem; /* Smaller heading for mobile */
+    }
+
+    .herpara {
+        font-size: 0.9rem; /* Smaller text for mobile */
+    }
+
+    .hero-button {
+        width: 8rem; /* Adjust button size on mobile */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        margin: 1rem; /* Reduce margin for smaller screens */
+        gap: 1rem;
+    }
+
+    .hero-text h1 {
+        font-size: 1.5rem; /* Reduce heading size */
+    }
+
+    .herpara {
+        font-size: 1rem; /* Adjust paragraph font size */
+    }
+}
+

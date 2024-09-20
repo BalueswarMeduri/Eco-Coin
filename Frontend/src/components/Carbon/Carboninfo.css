@@ -1,0 +1,99 @@
+.result {
+    margin: 0 40px 20px 40px;
+
+}
+
+.mainContainer {
+    padding-top: 8rem !important;
+}
+
+.mainContainer label,
+.mainContainer select {
+    margin: 0.5rem 0;
+}
+
+.mainContainer label {
+    color: var(--green);
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+select {
+    border-radius: 5px;
+    color: var(--black);
+    /* width: 120% !important;
+    padding: 20px !important; */
+}
+
+option {
+    color: var(--black);
+}
+
+input {
+    color: var(--black);
+    border-radius: 5px;
+    /* width: 120% !important;
+    padding: 20px !important; */
+}
+
+.mainContainer p {
+    color: var(--grey);
+}
+
+.mainContainer input:focus,
+.mainContainer select:focus {
+    border-radius: 20px;
+    outline: 3px solid var(--green);
+    outline-offset: -3px;
+    border-radius: 3px;
+}
+
+.bar p {
+    font-size: 1.2rem;
+}
+
+.mainContainer {
+    padding: 20px;
+}
+
+.bar {
+    margin: 20px 0;
+}
+
+.answer-heading {
+    font-size: 26px !important;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.answer-text {
+    font-size: 23px !important;
+    margin-bottom: 10px;
+}
+
+.conversation-item {
+    margin-top: 20px;
+}
+
+.sugg {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.9rem;
+    color: var(--green);
+    font-weight: 600;
+}
+
+.co {
+    padding: 15px 0;
+    color: var(--green) !important;
+    font-size: 1.7rem !important; 
+}
+.whatis{
+    text-align: center;
+    border: 2px solid var(--green);
+    border-radius: 1rem;
+    padding: 10px;
+}
+@media (min-width: 320px) and (max-width: 480px){
+    
+}
